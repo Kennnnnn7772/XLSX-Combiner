@@ -27,7 +27,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --clean --noconfirm --name Combine_XLSX combine_xlsx.py
+          pyinstaller --onefile --clean --noconfirm --name Combine_XLSX .\combine_xlsx.py
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
